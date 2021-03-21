@@ -1,0 +1,2580 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="//script.hotjar.com" rel="preconnect">
+<link href="//static.hotjar.com" rel="preconnect">
+<link href="https://static1.sosiva451.com/" rel="preconnect">
+<link href="https://www.google-analytics.com" rel="preconnect">
+<link href="https://www.facebook.com" rel="preconnect">
+<link href="https://www.google.com" rel="preconnect">
+<link href="https://www.googleadservices.com" rel="preconnect">
+<link href="https://www.googletagmanager.com" rel="preconnect">
+<link href="https://www.googletagservices.com" rel="preconnect">
+<link href="https://static.criteo.net" rel="preconnect">
+<link href="https://sslwidget.criteo.com" rel="preconnect">
+<link href="https://analytics.trovit.com" rel="preconnect">
+<link href="https://cdn.ampproject.org" rel="preconnect">
+<link href="https://s3-us-west-2.amazonaws.com" rel="preconnect">
+<link href="https://pagead2.googlesyndication.com" rel="preconnect">
+<link href="https://adservice.google.com.br" rel="preconnect">
+<link href="https://www.gstatic.com" rel="preconnect">
+<link href="https://adservice.google.com" rel="preconnect">
+<link href="https://connect.facebook.net" rel="preconnect">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://tpc.googlesyndication.com" rel="preconnect">
+    <link href="/Content/favicons/argenprop.ico" rel="shortcut icon" type="image/png">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"NRJS-bbccb0372d4c9cf6b6f","applicationID":"934749717","transactionName":"YFUEZBFRWRAEBkNbC1kfK2YgH3sKFhFeXAN0XwhEEV9bDwAXGHsKU1Ue","queueTime":0,"applicationTime":75,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:false},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"934750204",accountID:"2860321",trustKey:"2349882",xpid:"Vg4BUVVRCRAJV1VVAwgAV1M=",licenseKey:"NRJS-bbccb0372d4c9cf6b6f",applicationID:"934749717"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(28),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{l?l-=1:o(c||new UncaughtException(t,e,n),!0)}catch(u){try{i("ierr",[u,s.now(),!0])}catch(d){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(29),c=t("ee"),s=t("loader"),u=t("gos"),f=window.onerror,d=!1,p="nr@seenError",l=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(l+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(u(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){L++,T=g.hash,this[f]=y.now()}function o(){L--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[f],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",u="-body",f="fn"+c,d="fn"+s,p="cb"+c,l="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),P=t(14),M=t(9),S=t("ee"),C=S.get("tracer");t(16),y.features.spa=!0;var T,L=0;S.on(f,r),b.on(p,r),M.on(p,r),S.on(d,o),b.on(l,o),M.on(l,o),S.buffer([f,d,"xhr-done","xhr-resolved"]),R.buffer([f]),O.buffer(["setTimeout"+s,"clearTimeout"+c,f]),P.buffer([f,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+u+c,m+u+s]),E.buffer(["newURL"]),x.buffer([f]),b.buffer(["propagate",p,l,"executor-err","resolve"+c]),C.buffer([f,"no-"+f]),M.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(P,"send-xhr"+c),a(S,"xhr-resolved"),a(S,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(M,"new-jsonp"),a(M,"jsonp-end"),a(M,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",u="addEventListener",f="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u in window.performance&&(window.performance["c"+s]?window.performance[u](f,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[u]("webkit"+f,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[u]("scroll",r,{passive:!0}),document[u]("keypress",r,!1),document[u]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(f);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[f,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),u=XMLHttpRequest,f="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(u.prototype)):u.prototype.hasOwnProperty(f)&&(o(window),o(u.prototype)),a.on(f+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(29),a=t(28);e.exports=o;var c=window,s="fetch-",u=s+"body-",f=["arrayBuffer","blob","json","text","formData"],d=c.Request,p=c.Response,l=c.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(f,function(t,e){r(d[h],e,u),r(p[h],e,u)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var f=c(a),d="function"==typeof f.parent[f.key];if(d){var p={};u.inPlace(f.parent,[f.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(f);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),u=t("wrap-function")(s);if(e.exports=s,o()){var f=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?u.inPlace(Node.prototype,l,"dom-"):(u.inPlace(HTMLElement.prototype,l,"dom-"),u.inPlace(HTMLHeadElement.prototype,l,"dom-"),u.inPlace(HTMLBodyElement.prototype,l,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=c(t,"executor-",e,null,!1),r=new u(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,c=o(i),s=t(28),u=NREUM.o.PR;e.exports=i,u&&(window.Promise=r,["all","race"].forEach(function(t){var e=u[t];u[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(u,arguments),c=u.resolve(a);return c}}),["resolve","reject"].forEach(function(t){var e=u[t];u[t]=function(t){var n=e.apply(u,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),u.prototype["catch"]=function(t){return this.then(null,t)},u.prototype=Object.create(u.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(u),function(t,e){try{r[e]=u[e]}catch(n){}}),o.wrapInPlace(u.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=c(n[0],"cb-",r,null,!1),n[1]=c(n[1],"cb-",r,null,!1);var s=t.apply(this,n);return r.nextPromise=s,i.emit("propagate",[e,!0],s,!1,!1),s}}),i.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this,null,!1),t[1]=c(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+u})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",u="clearTimeout",f="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[u,"clearImmediate"],u+d),i.on(s+f,r),i.on(c+f,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=f.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,f.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var u=t("ee"),f=u.get("xhr"),d=t("wrap-function")(f),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=f;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{f.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}return e};if(s(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),f.on("send-xhr-start",function(t,e){r(t,e),i(e)}),f.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else u.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,u=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,u)),(t.sameOrigin&&!f()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,u)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",u="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+u+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return u()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(25),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(17),u=t(15).generateTracePayload,f=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(21),m=t(20),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=u(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<p;c++)e.addEventListener(d[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),f.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=u(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(20);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[u.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(28),c=t(29),s=t("ee").get("tracer"),u=t("loader"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),f.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[u.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[u.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,u.now(),!1,e])}},{}],20:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],21:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],22:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(30);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],23:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],24:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,u,f,d=t("handle"),p=t("loader"),l=t(27),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}l(c)}},{}],25:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],26:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],27:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],28:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],29:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],30:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,s,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var c=e(o),s=m(n),u=s.length,f=0;f<u;f++)s[f].apply(c,r);var p=d[y[n]];return p&&p.push([x,n,r,c]),c}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:c,aborted:!1};return x}function i(t){return u(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var s="nr@context",u=t("gos"),f=t(28),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();s(y,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}var a=t(22),c=t("handle"),s=t(28),u=t("ee"),f=t(26),d=t(23),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1208.min.js"},x=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:a.getLastTimestamp(),now:a,origin:g,features:{},xhrWrappable:x,userAgent:f};t(19),t(24),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,u){function nrWrapper(){var i,a,f,p;try{a=this,i=d(arguments),f="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,s],f],t)}c(n+"start",[i,a,s],f,u);try{return p=e.apply(a,i)}catch(h){throw c(n+"err",[i,a,h],f,u),h}finally{c(n+"end",[i,a,p],f,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var c,s,u,f="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],c=t[s],a(c)||(t[s]=n(c,f?s+r:r,o,s,i))}function c(n,r,i,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,i,e,a)}catch(s){o([s,n,r,i],t)}h=c}}return t||(t=f),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=f);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,i(t,n,f),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var f=t("ee"),d=t(29),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=u},{}]},{},["loader",2,16,5,3,4]);</script> <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport"> <meta content="app-id=400300356" name="apple-itunes-app"> <meta content="yes" name="apple-mobile-web-app-capable"> <meta content="yes" name="mobile-web-app-capable"> <link href="https://www.argenprop.com/departamento-alquiler-partido-tandil" rel="canonical"> <meta content="Encontrá en Argenprop 3 departamento en alquiler en Tandil. ¡Tenemos las mejores propiedades para tu búsqueda!" name="description">
+    <meta content="website" property="og:type"> <meta content="/departamento-alquiler-partido-tandil" property="og:url"> <meta content="Encontrá en Argenprop 3 departamento en alquiler en Tandil. ¡Tenemos las mejores propiedades para tu búsqueda!" property="og:description"> <meta content="Departamento en Alquiler en Tandil - Argenprop" property="og:title"> <meta content="Argenprop" property="og:site_name"> <meta content="963532813734086" property="fb:app_id"> <meta content="https://www.argenprop.com/Content/images/facebook-image.jpg" property="og:image">
+
+<link href="/Styles/argenprop/listing?v=ERmjh521tDIVp27wpuQWE_enOsmCddva0gFj0z4GtEs1" rel="stylesheet"/>
+
+    
+<!-- Google Tag Manager -->
+<script async="async" defer>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KXR5P9');
+</script>
+<!-- End Google Tag Manager -->
+<!-- Facebook SDK -->
+<script async="async" defer>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId:'963532813734086',
+            version: 'v2.10'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        js.async = true;
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Google DoubleClick for Publishers -->
+<script async="async" defer src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+
+<!-- End Google DoubleClick for Publicshers -->
+
+<script type="text/javascript" src="//static.criteo.net/js/ld/ld.js" async="async" defer></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        }; if (!f._fbq) f._fbq = n;
+        n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+</script>
+<!-- End Facebook Pixel Code -->
+    
+    <script>
+googletag.cmd.push(function() {{
+var slot = undefined;
+ slot = googletag.defineSlot('/24365041/Resultado_Lateral_160x600', [160, 600], 'listinglateral'); slot.addService(googletag.pubads());
+ slot.setTargeting('tipo_inmueble', 'departamento');  slot.setTargeting('tipo_operacion', 'alquiler');  slot.setTargeting('partido_nombre', 'tandil');  slot.setTargeting('id_sistema', '3');  slot = googletag.defineSlot('/24365041/Resultado_Busqueda_Podio_728x90', [728, 90], 'listingpodio'); slot.addService(googletag.pubads());
+ slot.setTargeting('tipo_inmueble', 'departamento');  slot.setTargeting('tipo_operacion', 'alquiler');  slot.setTargeting('partido_nombre', 'tandil');  slot.setTargeting('id_sistema', '3');  slot = googletag.defineSlot('/24365041/Resultado_Busqueda_Banner2_728x90', [728, 90], 'listingbanner'); slot.addService(googletag.pubads());
+ slot.setTargeting('tipo_inmueble', 'departamento');  slot.setTargeting('tipo_operacion', 'alquiler');  slot.setTargeting('partido_nombre', 'tandil');  slot.setTargeting('id_sistema', '3');  slot = googletag.defineSlot('/24365041/Resultado_Busqueda_Paginador_728x90', [728, 90], 'listingpaginador'); slot.addService(googletag.pubads());
+ slot.setTargeting('tipo_inmueble', 'departamento');  slot.setTargeting('tipo_operacion', 'alquiler');  slot.setTargeting('partido_nombre', 'tandil');  slot.setTargeting('id_sistema', '3'); googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs();
+googletag.enableServices();
+}});
+</script>
+
+            <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Departamento en Alquiler en Tandil - Argenprop" />
+        <meta name="twitter:description" content="Encontr&#225; propiedades e inmuebles en venta y alquiler, casas, departamentos, terrenos, locales, oficinas, quintas, PH, cocheras y m&#225;s en Argenprop." />
+
+
+
+    <title>Departamento en Alquiler en Tandil - Argenprop</title>
+</head>
+<body vocab="http://schema.org/"
+      typeof="WebPage"
+      data-localKey-nombre-pagina="Index"
+      data-localKey-nombre-controlador="Listing"
+      data-localKey-user-email=""
+      data-key-username="_pmb_user_"
+      data-localKey-username="userName"
+      data-localKey-userphone="userPhone"
+      data-alert-shows-onetap="5"
+      class=""
+      data-ignorado-url=/Api/Toggleignorado >
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KXR5P9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager -->
+    
+    <a href="/ver-mas-anuncios-hnpl" style="display:none;" aria-hidden="true">Ver más avisos</a>
+    
+    <input id="UrlAnalytics" name="UrlAnalytics" type="hidden" value="http://analytics.sosiva451.com" />
+
+
+
+
+
+<header>
+    <div class="container">
+        <button class="header__menu-show" data-header-menu-mobile>
+            <i class="basico1-icon-menu menu-trigger"></i>
+        </button>
+
+        <a href="/" class="header__logo">
+            <img src="/Content/images/argenprop/argenprop-logo.svg" alt="Argenprop" data-logo="true" />
+        </a>
+
+        <div class="header__right-section">
+                    <button type="button" data-listing-filters="/Listing/FiltersResponsive">
+            <i class="basico1-icon-tune"></i>
+            Filtros
+        </button>
+
+        </div>
+
+        <nav class="header__bar" data-header-menu>
+            <ul>
+                
+
+
+		<li>         
+			<a href="/" id="buscar-propiedades"><i class="basico1-icon-home"></i>
+Buscar propiedades</a>			
+		</li>
+		<li>         
+			<a data-search-emprendimiento-header="" href="https://emprendimientos.argenprop.com/emprendimiento" id="entrepreneurship"><i class="basico1-icon-building"></i>
+Emprendimientos</a>			
+		</li>
+		<li>         
+			<a data-search-countries-header="" href="https://countries.argenprop.com/" id="countries"><i class="basico1-icon-country"></i>
+Countries<strong class="badge">nuevo</strong></a>			
+		</li>
+		<li>         
+			<a href="/Garantias-Alquiler" id="garantias"><i class="basico1-icon-calculator"></i>
+Garantías de Alquiler</a>			
+		</li>
+		<li>         
+			<a href="/Publicar" id="publicar"><i class="basico1-icon-sell"></i>
+Publicar</a>			
+		</li>
+		<li>         
+			<a href="/Noticias" id="noticias"><i class="basico1-icon-news"></i>
+Noticias</a>			
+		</li>
+
+            </ul>
+        </nav>
+
+            <div class="header__login-container"
+                 data-login-box
+                 data-isauthenticated-url="/Auth/IsAuthenticated"
+                 data-url-button="/Auth/GetMyAccountButtonPartial">
+                    <div class="header-widget">
+        <button type="button" class="btn-my-account collapsed"
+                id="dropdown-account-menu"
+                data-menu-account-trigger>
+            <i class="basico1-icon-my_account"></i>
+
+            <span data-menu-account-label="Mi cuenta">
+                Mi cuenta
+            </span>
+
+            <i class="basico1-icon-angle_down target-is-close"></i>
+            <i class="basico1-icon-angle_up target-is-open"></i>
+        </button>
+
+        <div id="accountMenu" class="dropdown" data-menu-account>
+            <ul class="dropdown-menu" data-menu-links></ul>
+
+            <div class="login-container" data-menu-login>
+                <button class="btn btn-primary btn-block btn-big"                       
+                        data-login-email
+                        data-modal-login
+                        data-modal-login-title="Iniciar sesi&#243;n">
+                    Entrar
+                </button>
+
+                <p>
+                    ¿No estás registrado?
+                    <a class="btn btn-terciary" href="#" id="registerModalPopupOpen" data-modal-register>
+                        Registrate ahora
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="alert-login" data-onetap-login>
+
+
+        <input id="ReturnUrlLogin" name="ReturnUrlLogin" type="hidden" value="https://www.argenprop.com/departamento-alquiler-partido-tandil" />
+
+        <p>
+            Iniciar sesi&#243;n en Argenprop con:
+            <i class="basico1-icon-close" data-onetap-close></i>
+        </p>
+        <a href="#"
+           data-onetap-google
+           data-modal-social-login
+           data-modal-social-login-url="/Auth/ModalGoogleLogin">
+            <img src="/Content/Images/google_logo.svg" alt="Continuar con Google" /> Continuar con Google
+        </a>
+        <a href="#"
+           data-onetap-facebook
+           data-modal-social-login
+           data-modal-social-login-url="/Auth/ModalFacebookLogin">
+            <img src="/Content/Images/facebook_logo.svg" alt="Continuar con Facebook" /> Continuar con Facebook
+        </a>
+        <a href="#"
+           data-onetap-apple
+           data-modal-social-login
+           data-modal-social-login-url="/Auth/ModalAppleLogin">
+            <img src="/Content/Images/apple_logo.svg" alt="Continuar con Apple" /> Continuar con Apple
+        </a>
+        <a href="#"
+           data-modal-login
+           data-login-email-onetap
+           data-modal-login-title="Iniciar sesi&#243;n">
+            <i class="basico1-icon-mail"></i>Continuar con tu email
+        </a>
+    </div>
+
+            </div>
+    </div>
+</header>
+
+
+        <main>
+            
+
+
+
+
+<input type="hidden" id="ga-dimension-list"
+       data-tipo-operacion="Alquiler"
+       data-tipo-propiedad="Departamento"
+       data-ids-avisos-mostrados="8534105,7338270,8538044"
+       data-ultimo-callejero="Tandil"/>
+
+
+
+
+
+<input data-lazy-nophoto="" id="ListingNoPhoto" name="ListingNoPhoto" type="hidden" value="/Content/images/listing-camera.svg" />
+
+    <div class="mobile-tabs">
+        <label class="mobile-tab order-tab ">
+            <i class="basico1-icon-swap_vert"></i>
+            Ordenar
+
+<form action="/Listing/OrderBy" method="post"><input id="Url" name="Url" type="hidden" value="partido=tandil&amp;start=0&amp;tipooperacion=alquiler&amp;tipopropiedad=departamento" />                    <select name="sort" data-sort-dropdown>
+                        <option selected=&#39;selected&#39; value="Destaque">
+                            Destaque
+                        </option>
+                        <option  value="MenorPrecio">
+                            Menor precio
+                        </option>
+                        <option  value="MayorPrecio">
+                            Mayor precio
+                        </option>
+                        <option  value="MasNuevos">
+                            M&#225;s nuevos
+                        </option>
+                    </select>
+</form>        </label>
+
+        <button type="button" class="mobile-tab" data-change-view="/departamento-alquiler-partido-tandil?vista=Mapa">
+                <i class="basico1-icon-map"></i>
+Ver mapa        </button>
+
+        <button type="button" class="mobile-tab mobile-tab-disabled" data-mobile-create-alert>
+            <i class="basico1-icon-bell"></i>
+            Alertas
+        </button>
+    </div>
+
+
+    <div class="container container--listing">
+
+        <sidebar>
+            
+
+
+<div class="filter__container filter__applies">
+    <p class="filter__title">
+        Filtros aplicados
+    </p>
+
+    <div class="filter__content">
+        <ul>
+        <li>
+            <h2>
+                    <span id="tipopropiedad_departamento" data-remove-filter="/inmuebles-alquiler-partido-tandil" title="quitar filtro">
+                        <i class="basico1-icon-cross_black"></i>
+                    </span>
+
+                Departamento
+            </h2>
+        </li>
+        <li>
+            <h2>
+                    <span id="tipooperacion_alquiler" data-remove-filter="/departamento-partido-tandil" title="quitar filtro">
+                        <i class="basico1-icon-cross_black"></i>
+                    </span>
+
+                Alquiler
+            </h2>
+        </li>
+        <li>
+            <h2>
+                    <span id="partido_tandil" data-remove-filter="/departamento-alquiler-provincia-buenos-aires" title="quitar filtro">
+                        <i class="basico1-icon-cross_black"></i>
+                    </span>
+
+                Tandil
+            </h2>
+        </li>
+        </ul>
+
+        <button data-clear-filters="/inmuebles" class="btn btn-terciary btn-block">
+            <i class="basico1-icon-trash"></i>
+            Borrar filtros
+        </button>
+    </div>
+</div>
+
+    <div id="saveAlertContainer" data-url-partial="/Listing/GetAlertSavePartial">
+        <div class="save-alert loader"></div>
+    </div>
+    <div id="saveAlertLoader" style="display:none">
+        <svg class="spinner" viewBox="0 0 50 50" data-loader>
+    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+</svg>
+
+    </div>
+    <template id="saveAlertResultTmpl">
+        
+<div class="save-alert">
+    <span class="save-alert__title">
+        Alerta creada        
+    </span>
+
+    <p class="save-alert__description">
+        Recibir&#225;s novedades de esta b&#250;squeda a diario.
+    </p>
+</div>
+
+    </template>
+
+<div class="filter__container filter__availables">
+
+<form action="/Listing/SearchByListing" id="filters" method="post"><input id="Url" name="Url" type="hidden" value="partido=tandil&amp;start=0&amp;tipooperacion=alquiler&amp;tipopropiedad=departamento" /><input data-val="true" data-val-required="The MapView field is required." id="MapView" name="MapView" type="hidden" value="False" />        <div class="filter__content">
+
+
+
+
+    <div class="available available--multi-check-location">
+<form action="/Listing/FilterByLocation" method="post"><input id="url_location" name="Url" type="hidden" value="partido=tandil&amp;start=0&amp;tipooperacion=alquiler&amp;tipopropiedad=departamento" /><input data-val="true" data-val-required="The TipoListado field is required." id="tipo_listado_location" name="TipoListado" type="hidden" value="Fotos" />            <p class="available__title" data-target="#locationContainer">
+                Ubicaci&#243;n
+
+            </p>
+            <div id="locationContainer" class="collapsable-content">
+                <div class="form-group">
+                    <input type="text" class="form-control" autocomplete="off" placeholder="Buscar..." data-location-search="locationContainer" />
+                </div>
+
+                <div id="locationContainer" class="available__content" data-tree-checkbox-behavior>
+        <ul class="available__top-items" id="">
+                <li class="is-father">
+                        <span class="available__toggle" data-toggle="collapse" data-target="#c_tandiltan_hidden">
+                            <i class="basico1-icon-angle_dow_bold target-is-open"></i>
+                            <i class="basico1-icon-angle_up_bold target-is-close"></i>
+                        </span>
+
+<label class="checkbox-styled"><input id="localidad_tandil-tan" name="localidad" type="checkbox" value="tandil-tan"></input><span>Tandil</span></label>                            <ul class=" is-children collapsable-content collapse" id="c_tandiltan_hidden">
+                <li class="">
+
+<label class="checkbox-styled"><input id="barrio_tandil-tan_la-mata" name="barrio" type="checkbox" value="tandil-tan_la-mata"></input><span>La Mata</span></label>                                    </li>
+        </ul>
+                </li>
+                <li class="is-father">
+
+<label class="checkbox-styled"><input id="localidad_gardey" name="localidad" type="checkbox" value="gardey"></input><span>Gardey</span></label>                                    </li>
+                <li class="is-father">
+
+<label class="checkbox-styled"><input id="localidad_altos-aires-br-serrano" name="localidad" type="checkbox" value="altos-aires-br-serrano"></input><span>Altos Aires Barrio Serrano</span></label>                                    </li>
+                <li class="is-father">
+
+<label class="checkbox-styled"><input id="localidad_cantera-aguirre" name="localidad" type="checkbox" value="cantera-aguirre"></input><span>Cantera Aguirre</span></label>                                    </li>
+                <li class="is-father">
+
+<label class="checkbox-styled"><input id="localidad_maria-ignacia" name="localidad" type="checkbox" value="maria-ignacia"></input><span>Maria Ignacia</span></label>                                    </li>
+        </ul>
+
+                            <ul class="" id="">
+                <li class="is-father">
+
+<label class="checkbox-styled"><input id="localidad_vela" name="localidad" type="checkbox" value="vela"></input><span>Vela</span></label>                                    </li>
+        </ul>
+
+                </div>
+
+                <button id="locationApply" type="submit" class="btn btn-primary btn-block btn-sm" data-location-apply disabled>
+                    Aplicar
+                </button>
+            </div>
+</form>    </div>
+
+<div class="available available--address">
+    <p class="available__title">
+        Direcci&#243;n
+    </p>
+
+    <div id="direccionfilter" class="available__content" data-behavior-input-filters>
+        <div class="form-group">
+            <input class="form-control" data-address="true" id="Address" minlength="3" name="Address" placeholder="Ej. Av. del Libertador" type="text" value="" />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="direccionfilterButton" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+
+
+
+
+<div class="available available--multi-check">
+    <p class="available__title" data-toggle="collapse" data-target="#tipooperacionContainer">
+        Tipo de operaci&#243;n
+
+    </p>
+
+    <div id="tipooperacionContainer" class="" data-filter-active-button data-checkbox-behavior>
+               
+            <div id="tipooperacionFilter" class="available__content">
+                    <ul>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipooperacion_venta" name="tipooperacion" type="checkbox" value="venta">
+
+            <span>
+                Venta
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipooperacion_alquiler" name="tipooperacion" type="checkbox" value="alquiler" checked>
+
+            <span>
+                Alquiler
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipooperacion_alquiler-por-temporada" name="tipooperacion" type="checkbox" value="alquiler-por-temporada">
+
+            <span>
+                Alquiler Por Temporada
+            </span>
+        </label>
+    </li>
+                    </ul>
+
+                <ul id="tipooperacion_hidden" class="collapsable-content collapsable-content-mobile collapse">
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipooperacion_tiempo-compartido" name="tipooperacion" type="checkbox" value="tiempo-compartido">
+
+            <span>
+                Tiempo Compartido
+            </span>
+        </label>
+    </li>
+                </ul>
+            </div>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#tipooperacion_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="tipooperacionContainerButton" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+
+
+
+<div class="available available--multi-check">
+    <p class="available__title" data-toggle="collapse" data-target="#tipopropiedadContainer">
+        Tipo de propiedad
+
+    </p>
+
+    <div id="tipopropiedadContainer" class="" data-filter-active-button data-checkbox-behavior>
+               
+            <div id="tipopropiedadFilter" class="available__content">
+                    <ul class="available__top-items">
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_departamento" name="tipopropiedad" type="checkbox" value="departamento" checked>
+
+            <span>
+                Departamento
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_casa" name="tipopropiedad" type="checkbox" value="casa">
+
+            <span>
+                Casa
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_depto-tipo-casa" name="tipopropiedad" type="checkbox" value="depto-tipo-casa">
+
+            <span>
+                Ph
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_terreno" name="tipopropiedad" type="checkbox" value="terreno">
+
+            <span>
+                Terreno
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_local" name="tipopropiedad" type="checkbox" value="local">
+
+            <span>
+                Local
+            </span>
+        </label>
+    </li>
+                    </ul>
+
+                <ul>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_campo" name="tipopropiedad" type="checkbox" value="campo">
+
+            <span>
+                Campo
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_cochera" name="tipopropiedad" type="checkbox" value="cochera">
+
+            <span>
+                Cochera
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_fondo-comercio" name="tipopropiedad" type="checkbox" value="fondo-comercio">
+
+            <span>
+                Fondo Comercio
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_galpon" name="tipopropiedad" type="checkbox" value="galpon">
+
+            <span>
+                Galpon
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_hotel" name="tipopropiedad" type="checkbox" value="hotel">
+
+            <span>
+                Hotel
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_negocio-especial" name="tipopropiedad" type="checkbox" value="negocio-especial">
+
+            <span>
+                Negocio Especial
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_oficina" name="tipopropiedad" type="checkbox" value="oficina">
+
+            <span>
+                Oficina
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="tipopropiedad_quinta" name="tipopropiedad" type="checkbox" value="quinta">
+
+            <span>
+                Quinta
+            </span>
+        </label>
+    </li>
+                </ul>
+            </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="tipopropiedadContainerButton" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+
+
+
+<div class="available available--price-range">
+    <p class="available__title">
+        Precio
+    </p>
+
+    <div id="preciorango" class="available__content">
+        <div class="available__price-content" data-currency>
+                <div>
+                    <label class="radio-styled"><input checked="checked" data-label-message="Incluir equivalentes en dólares." data-placeholder-labelDesde="$ Desde" data-placeholder-labelHasta="$ Hasta" data-price-currency="1" data-val="true" data-val-number="El valor debe ser numérico" id="Moneda_1" name="Moneda" type="radio" value="1" /><span>Pesos</span></label>
+                </div>
+                <div>
+                    <label class="radio-styled"><input data-label-message="Incluir equivalentes en pesos." data-placeholder-labelDesde="USD Desde" data-placeholder-labelHasta="USD Hasta" data-price-currency="2" id="Moneda_2" name="Moneda" type="radio" value="2" /><span>Dolares</span></label>
+                </div>
+        </div>
+
+        <div class="text-group" data-behavior-input-filters data-behavior-input-numeric id="preciorangoContainer">
+            <input class="form-control" data-key-allow="\d" id="PrecioDesde" maxlength="11" name="PrecioDesde" placeholder="$ Desde" type="text" value="" />
+            <input class="form-control" data-key-allow="\d" id="PrecioHasta" maxlength="11" name="PrecioHasta" placeholder="$ Hasta" type="text" value="" />
+        </div>
+
+        <label class="checkbox-styled"><input checked="checked" id="IncludeOtherCurrency" name="IncludeOtherCurrency" type="checkbox" value="true"></input><span>Incluir equivalentes en d&#243;lares.</span><input name="IncludeOtherCurrency" type="hidden" value="false"></input></label>
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="preciorangoContainerButton" )" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+<div class="available available--price-range">
+    <p class="available__title">
+        Expensas
+    </p>
+
+    <div id="preciorango" class="available__content">
+        <div class="available available--expensas-range">
+            <div class="available__expensas-content">
+                <div class="text-group" data-behavior-input-filters data-behavior-input-numeric id="expensasrangoContainer">
+                    <input class="form-control" data-key-allow="\d" id="ExpensasPrecioDesde" maxlength="11" name="ExpensasPrecioDesde" placeholder="$ Desde" type="text" value="" />
+                    <input class="form-control" data-key-allow="\d" id="ExpensasPrecioHasta" maxlength="11" name="ExpensasPrecioHasta" placeholder="$ Hasta" type="text" value="" />
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary btn-block btn-sm" id="expensasrangoContainerButton" disabled>
+                Aplicar
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="available available--multi-check">
+    <p class="available__title" data-toggle="collapse" data-target="#cantidaddormitoriosContainer">
+        Dormitorios
+
+    </p>
+
+    <div id="cantidaddormitoriosContainer" class="" data-filter-active-button data-checkbox-behavior>
+               
+            <div id="cantidaddormitoriosFilter" class="available__content">
+                    <ul>
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidaddormitorios_monoambiente" name="cantidaddormitorios" type="checkbox" value="monoambiente">
+
+            <span>
+                Monoambiente
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidaddormitorios_1-dormitorio" name="cantidaddormitorios" type="checkbox" value="1-dormitorio">
+
+            <span>
+                1 Dormitorio
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidaddormitorios_2-dormitorios" name="cantidaddormitorios" type="checkbox" value="2-dormitorios">
+
+            <span>
+                2 Dormitorios
+            </span>
+        </label>
+    </li>
+                    </ul>
+
+                <ul id="cantidaddormitorios_hidden" class="collapsable-content collapsable-content-mobile collapse">
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidaddormitorios_3-dormitorios" name="cantidaddormitorios" type="checkbox" value="3-dormitorios">
+
+            <span>
+                3 Dormitorios
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidaddormitorios_4-dormitorios" name="cantidaddormitorios" type="checkbox" value="4-dormitorios">
+
+            <span>
+                4 Dormitorios
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidaddormitorios_5-o-m&#225;s-dormitorios" name="cantidaddormitorios" type="checkbox" value="5-o-m&#225;s-dormitorios">
+
+            <span>
+                5 o m&#225;s Dormitorios
+            </span>
+        </label>
+    </li>
+                </ul>
+            </div>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#cantidaddormitorios_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="cantidaddormitoriosContainerButton" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+
+
+
+<div class="available available--multi-check">
+    <p class="available__title" data-toggle="collapse" data-target="#cantidadambientesContainer">
+        Ambientes
+
+    </p>
+
+    <div id="cantidadambientesContainer" class="" data-filter-active-button data-checkbox-behavior>
+               
+            <div id="cantidadambientesFilter" class="available__content">
+                    <ul>
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidadambientes_1-ambiente" name="cantidadambientes" type="checkbox" value="1-ambiente">
+
+            <span>
+                1 Ambiente
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidadambientes_2-ambientes" name="cantidadambientes" type="checkbox" value="2-ambientes">
+
+            <span>
+                2 Ambientes
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidadambientes_3-ambientes" name="cantidadambientes" type="checkbox" value="3-ambientes">
+
+            <span>
+                3 Ambientes
+            </span>
+        </label>
+    </li>
+                    </ul>
+
+                <ul id="cantidadambientes_hidden" class="collapsable-content collapsable-content-mobile collapse">
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidadambientes_4-ambientes" name="cantidadambientes" type="checkbox" value="4-ambientes">
+
+            <span>
+                4 Ambientes
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="cantidadambientes_5-o-m&#225;s-ambientes" name="cantidadambientes" type="checkbox" value="5-o-m&#225;s-ambientes">
+
+            <span>
+                5 o m&#225;s ambientes
+            </span>
+        </label>
+    </li>
+                </ul>
+            </div>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#cantidadambientes_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="cantidadambientesContainerButton" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+
+<div class="available">
+    <p class="available__title" data-toggle="collapse" data-target="#cantidadbanos">
+        Ba&#241;os
+
+    </p>
+
+    <div id="cantidadbanos" class="available__content " data-behavior-filters>
+        <ul>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="indistinto" name="cantidadbanos" value="indistinto" checked>
+
+                        <span>Indistinto</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="1-o-m&#225;s-ba&#241;os" name="cantidadbanos" value="1-o-m&#225;s-ba&#241;os">
+
+                        <span>1 o m&#225;s ba&#241;os</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="2-o-m&#225;s-ba&#241;os" name="cantidadbanos" value="2-o-m&#225;s-ba&#241;os">
+
+                        <span>2 o m&#225;s ba&#241;os</span>
+                    </label>
+                </li>
+        </ul>
+
+            <ul id="cantidadbanos_hidden" class="collapsable-content collapsable-content-mobile collapse">
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="3-o-m&#225;s-ba&#241;os" name="cantidadbanos" value="3-o-m&#225;s-ba&#241;os">
+                            <span for="3-o-m&#225;s-ba&#241;os">3 o m&#225;s ba&#241;os</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="4-o-m&#225;s-ba&#241;os" name="cantidadbanos" value="4-o-m&#225;s-ba&#241;os">
+                            <span for="4-o-m&#225;s-ba&#241;os">4 o m&#225;s ba&#241;os</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="5-o-m&#225;s-ba&#241;os" name="cantidadbanos" value="5-o-m&#225;s-ba&#241;os">
+                            <span for="5-o-m&#225;s-ba&#241;os">5 o m&#225;s ba&#241;os</span>
+                        </label>
+                    </li>
+            </ul>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#cantidadbanos_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+    </div>
+</div>
+
+
+<div class="available">
+    <p class="available__title" data-toggle="collapse" data-target="#cantidadcocheras">
+        Cocheras
+
+    </p>
+
+    <div id="cantidadcocheras" class="available__content " data-behavior-filters>
+        <ul>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="indistinto" name="cantidadcocheras" value="indistinto" checked>
+
+                        <span>Indistinto</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="1-o-m&#225;s-cocheras" name="cantidadcocheras" value="1-o-m&#225;s-cocheras">
+
+                        <span>1 o m&#225;s cocheras</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="2-o-m&#225;s-cocheras" name="cantidadcocheras" value="2-o-m&#225;s-cocheras">
+
+                        <span>2 o m&#225;s cocheras</span>
+                    </label>
+                </li>
+        </ul>
+
+            <ul id="cantidadcocheras_hidden" class="collapsable-content collapsable-content-mobile collapse">
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="3-o-m&#225;s-cocheras" name="cantidadcocheras" value="3-o-m&#225;s-cocheras">
+                            <span for="3-o-m&#225;s-cocheras">3 o m&#225;s cocheras</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="4-o-m&#225;s-cocheras" name="cantidadcocheras" value="4-o-m&#225;s-cocheras">
+                            <span for="4-o-m&#225;s-cocheras">4 o m&#225;s cocheras</span>
+                        </label>
+                    </li>
+            </ul>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#cantidadcocheras_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+    </div>
+</div>
+
+
+<div class="available available--surface-range">
+    <p class="available__title">
+        Cubierta:
+    </p>
+
+    <div id="superficietotalrango" class="available__content">
+        <div class="available__surface-content">
+            <div class="text-group" data-behavior-input-filters data-behavior-input-numeric id="supcubiertarangoContainer">
+                <input class="form-control" data-key-allow="\d" id="SuperficieCubiertaDesde" maxlength="11" name="SuperficieCubiertaDesde" placeholder="Desde m²" type="text" value="" />
+                <input class="form-control" data-key-allow="\d" id="SuperficieCubiertaHasta" maxlength="11" name="SuperficieCubiertaHasta" placeholder="Hasta m²" type="text" value="" />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="supcubiertarangoContainerButton" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+
+<div class="available">
+    <p class="available__title" data-toggle="collapse" data-target="#antiguedad">
+        Antiguedad
+
+            <span class="available__toggle">
+                <i class="basico1-icon-angle_dow_bold target-is-open"></i>
+                <i class="basico1-icon-angle_up_bold target-is-close"></i>
+            </span>
+    </p>
+
+    <div id="antiguedad" class="available__content collapsable-content collapse" data-behavior-filters>
+        <ul>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="indistinto" name="antiguedad" value="indistinto" checked>
+
+                        <span>Indistinto</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="a-estrenar" name="antiguedad" value="a-estrenar">
+
+                        <span>A estrenar</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="hasta-5-a&#241;os" name="antiguedad" value="hasta-5-a&#241;os">
+
+                        <span>Hasta 5 a&#241;os</span>
+                    </label>
+                </li>
+        </ul>
+
+            <ul id="antiguedad_hidden" class="collapsable-content collapsable-content-mobile collapse">
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="hasta-10-a&#241;os" name="antiguedad" value="hasta-10-a&#241;os">
+                            <span for="hasta-10-a&#241;os">Hasta 10 a&#241;os</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="hasta-20-a&#241;os" name="antiguedad" value="hasta-20-a&#241;os">
+                            <span for="hasta-20-a&#241;os">Hasta 20 a&#241;os</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="hasta-30-a&#241;os" name="antiguedad" value="hasta-30-a&#241;os">
+                            <span for="hasta-30-a&#241;os">Hasta 30 a&#241;os</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="m&#225;s-de-30-a&#241;os" name="antiguedad" value="m&#225;s-de-30-a&#241;os">
+                            <span for="m&#225;s-de-30-a&#241;os">M&#225;s de 30 a&#241;os</span>
+                        </label>
+                    </li>
+            </ul>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#antiguedad_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+    </div>
+</div>
+
+
+<div class="available">
+    <p class="available__title" data-toggle="collapse" data-target="#estadopropiedad">
+        Estado de la propiedad
+
+            <span class="available__toggle">
+                <i class="basico1-icon-angle_dow_bold target-is-open"></i>
+                <i class="basico1-icon-angle_up_bold target-is-close"></i>
+            </span>
+    </p>
+
+    <div id="estadopropiedad" class="available__content collapsable-content collapse" data-behavior-filters>
+        <ul>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="indistinto" name="estadopropiedad" value="indistinto" checked>
+
+                        <span>Indistinto</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="excelente" name="estadopropiedad" value="excelente">
+
+                        <span>Excelente</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="muy-bueno" name="estadopropiedad" value="muy-bueno">
+
+                        <span>Muy Bueno</span>
+                    </label>
+                </li>
+        </ul>
+
+            <ul id="estadopropiedad_hidden" class="collapsable-content collapsable-content-mobile collapse">
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="bueno" name="estadopropiedad" value="bueno">
+                            <span for="bueno">Bueno</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="regular" name="estadopropiedad" value="regular">
+                            <span for="regular">Regular</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="a-refaccionar" name="estadopropiedad" value="a-refaccionar">
+                            <span for="a-refaccionar">A Refaccionar</span>
+                        </label>
+                    </li>
+            </ul>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#estadopropiedad_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+    </div>
+</div>
+
+
+
+
+<div class="available available--multi-check">
+    <p class="available__title" data-toggle="collapse" data-target="#disposicionContainer">
+        Disposici&#243;n
+
+            <span class="available__toggle">
+                <i class="basico1-icon-angle_dow_bold target-is-open"></i>
+                <i class="basico1-icon-angle_up_bold target-is-close"></i>
+            </span>
+    </p>
+
+    <div id="disposicionContainer" class="collapsable-content collapse" data-filter-active-button data-checkbox-behavior>
+               
+            <div id="disposicionFilter" class="available__content">
+                    <ul>
+    <li>
+        <label class="checkbox-styled">
+                <input id="disposicion_contrafrente" name="disposicion" type="checkbox" value="contrafrente">
+
+            <span>
+                Contrafrente
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="disposicion_frente" name="disposicion" type="checkbox" value="frente">
+
+            <span>
+                Frente
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="disposicion_interno" name="disposicion" type="checkbox" value="interno">
+
+            <span>
+                Interno
+            </span>
+        </label>
+    </li>
+                    </ul>
+
+                <ul id="disposicion_hidden" class="collapsable-content collapsable-content-mobile collapse">
+    <li>
+        <label class="checkbox-styled">
+                <input id="disposicion_lateral" name="disposicion" type="checkbox" value="lateral">
+
+            <span>
+                Lateral
+            </span>
+        </label>
+    </li>
+                </ul>
+            </div>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#disposicion_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="disposicionContainerButton" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+
+<div class="available">
+    <p class="available__title" data-toggle="collapse" data-target="#tipounidaddepto">
+        Tipo de departamento
+
+            <span class="available__toggle">
+                <i class="basico1-icon-angle_dow_bold target-is-open"></i>
+                <i class="basico1-icon-angle_up_bold target-is-close"></i>
+            </span>
+    </p>
+
+    <div id="tipounidaddepto" class="available__content collapsable-content collapse" data-behavior-filters>
+        <ul>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="indistinto" name="tipounidaddepto" value="indistinto" checked>
+
+                        <span>Indistinto</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="departamento" name="tipounidaddepto" value="departamento">
+
+                        <span>Departamento</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="duplex" name="tipounidaddepto" value="duplex">
+
+                        <span>Duplex</span>
+                    </label>
+                </li>
+        </ul>
+
+            <ul id="tipounidaddepto_hidden" class="collapsable-content collapsable-content-mobile collapse">
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="loft" name="tipounidaddepto" value="loft">
+                            <span for="loft">Loft</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="penthouse" name="tipounidaddepto" value="penthouse">
+                            <span for="penthouse">Penthouse</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="ph" name="tipounidaddepto" value="ph">
+                            <span for="ph">Ph</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="piso" name="tipounidaddepto" value="piso">
+                            <span for="piso">Piso</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="semipiso" name="tipounidaddepto" value="semipiso">
+                            <span for="semipiso">Semipiso</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="triplex" name="tipounidaddepto" value="triplex">
+                            <span for="triplex">Triplex</span>
+                        </label>
+                    </li>
+            </ul>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#tipounidaddepto_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+    </div>
+</div>
+
+
+
+
+<div class="available available--multi-check">
+    <p class="available__title" data-toggle="collapse" data-target="#generalesContainer">
+        Generales
+
+            <span class="available__toggle">
+                <i class="basico1-icon-angle_dow_bold target-is-open"></i>
+                <i class="basico1-icon-angle_up_bold target-is-close"></i>
+            </span>
+    </p>
+
+    <div id="generalesContainer" class="collapsable-content collapse" data-filter-active-button data-checkbox-behavior>
+               
+            <div id="generalesFilter" class="available__content">
+
+                <ul>
+    <li>
+        <label class="checkbox-styled">
+                <input id="generales_aguacaliente" name="generales" type="checkbox" value="aguacaliente">
+
+            <span>
+                Agua caliente
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="generales_instalacionescalefaccion" name="generales" type="checkbox" value="instalacionescalefaccion">
+
+            <span>
+                Calefacci&#243;n
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="generales_termotanque" name="generales" type="checkbox" value="termotanque">
+
+            <span>
+                Termotanque
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="generales_segurocaucion" name="generales" type="checkbox" value="segurocaucion">
+
+            <span>
+                Acepta Garant&#237;as de Alquiler de Argenprop
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="generales_aptocredito" name="generales" type="checkbox" value="aptocredito">
+
+            <span>
+                Apto Cr&#233;dito
+            </span>
+        </label>
+    </li>
+                </ul>
+            </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="generalesContainerButton" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+
+
+
+<div class="available available--multi-check">
+    <p class="available__title" data-toggle="collapse" data-target="#serviciosContainer">
+        Servicios
+
+            <span class="available__toggle">
+                <i class="basico1-icon-angle_dow_bold target-is-open"></i>
+                <i class="basico1-icon-angle_up_bold target-is-close"></i>
+            </span>
+    </p>
+
+    <div id="serviciosContainer" class="collapsable-content collapse" data-filter-active-button data-checkbox-behavior>
+               
+            <div id="serviciosFilter" class="available__content">
+
+                <ul>
+    <li>
+        <label class="checkbox-styled">
+                <input id="servicios_aguacorriente" name="servicios" type="checkbox" value="aguacorriente">
+
+            <span>
+                Agua corriente
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="servicios_gasnatural" name="servicios" type="checkbox" value="gasnatural">
+
+            <span>
+                Gas natural
+            </span>
+        </label>
+    </li>
+    <li>
+        <label class="checkbox-styled">
+                <input id="servicios_electricidad" name="servicios" type="checkbox" value="electricidad">
+
+            <span>
+                Electricidad
+            </span>
+        </label>
+    </li>
+                </ul>
+            </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-sm" id="serviciosContainerButton" disabled>
+            Aplicar
+        </button>
+    </div>
+</div>
+
+
+<div class="available">
+    <p class="available__title" data-toggle="collapse" data-target="#tipovendedor">
+        Tipo de vendedor
+
+            <span class="available__toggle">
+                <i class="basico1-icon-angle_dow_bold target-is-open"></i>
+                <i class="basico1-icon-angle_up_bold target-is-close"></i>
+            </span>
+    </p>
+
+    <div id="tipovendedor" class="available__content collapsable-content collapse" data-behavior-filters>
+        <ul>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="indistinto" name="tipovendedor" value="indistinto" checked>
+
+                        <span>Indistinto</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="due&#241;o-directo" name="tipovendedor" value="due&#241;o-directo">
+
+                        <span>Due&#241;o Directo</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="inmobiliaria" name="tipovendedor" value="inmobiliaria">
+
+                        <span>Inmobiliaria</span>
+                    </label>
+                </li>
+        </ul>
+
+    </div>
+</div>
+
+
+<div class="available">
+    <p class="available__title" data-toggle="collapse" data-target="#tipourbanizacion">
+        Tipo de urbanizaci&#243;n
+
+            <span class="available__toggle">
+                <i class="basico1-icon-angle_dow_bold target-is-open"></i>
+                <i class="basico1-icon-angle_up_bold target-is-close"></i>
+            </span>
+    </p>
+
+    <div id="tipourbanizacion" class="available__content collapsable-content collapse" data-behavior-filters>
+        <ul>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="indistinto" name="tipourbanizacion" value="indistinto" checked>
+
+                        <span>Indistinto</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="barrio-cerrado" name="tipourbanizacion" value="barrio-cerrado">
+
+                        <span>Barrio Cerrado</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="radio-styled">
+                            <input type="radio" id="barrio-de-chacras" name="tipourbanizacion" value="barrio-de-chacras">
+
+                        <span>Barrio De Chacras</span>
+                    </label>
+                </li>
+        </ul>
+
+            <ul id="tipourbanizacion_hidden" class="collapsable-content collapsable-content-mobile collapse">
+                    <li>
+                        <label class="radio-styled">
+                                <input type="radio" id="country-club" name="tipourbanizacion" value="country-club">
+                            <span for="country-club">Country Club</span>
+                        </label>
+                    </li>
+            </ul>
+            <button type="button" class="collapsed btn btn-terciary" data-toggle="collapse" data-target="#tipourbanizacion_hidden">
+                <span class="target-is-close">
+                    Ver m&#225;s
+
+                    <i class="basico1-icon-angle_dow_bold"></i>
+                </span>
+                <span class="target-is-open">
+                    Ver menos
+                    <i class="basico1-icon-angle_up_bold"></i>
+                </span>
+            </button>
+    </div>
+</div>
+
+        </div>
+</form></div>
+
+
+<div class="dfp-listing-side" id="listinglateral">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('listinglateral'); });
+                </script></div>
+        </sidebar>
+
+        <div class="main__content" data-items-container>
+
+<div class="listing-header">
+        <h1 class="listing-header__title">
+            Departamento en Alquiler en Tandil
+        </h1>
+    
+        <p class="listing-header__subtitle">
+            3 resultados
+        </p>
+
+    <ul class="listing-header__options">
+        <li data-sort-container>
+<form action="/Listing/OrderBy" method="post"><input id="Url" name="Url" type="hidden" value="partido=tandil&amp;start=0&amp;tipooperacion=alquiler&amp;tipopropiedad=departamento" />                <div class="listing__sort-box">
+                    <label for="sort">
+                        Ordenar por
+                    </label>
+
+                    <div class="listing__sort-container">
+                        <select id="sort" name="sort" class="form-control custom-select-small" data-placeholder="Destaque" data-sort-dropdown data-custom-select>
+                            <option selected=&#39;selected&#39; value="Destaque">Destaque</option>
+                            <option  value="MenorPrecio">Menor precio</option>
+                            <option  value="MayorPrecio">Mayor precio</option>
+                            <option  value="MasNuevos">M&#225;s nuevos</option>
+                        </select>
+                    </div>
+                </div>
+</form>        </li>
+        <li>
+            <span data-change-view="/departamento-alquiler-partido-tandil?vista=Mapa" class="btn btn-secondary btn-sm">
+                <i class="basico1-icon-map"></i>
+                Ver mapa
+            </span>
+        </li>        
+    </ul>
+</div>
+
+<input type="hidden" id="GTM_Page" data-category="PageView" data-action="Lista" data-guid="43930f5f-54b0-44cb-80ca-794db4213144" data-custom-values="8534105,7338270,8538044" />
+<input type="hidden" id="criteo-listing" data-avisos-id="8534105,7338270,8538044" />
+
+
+
+<div class="listing-container" data-contact-list-aviso-id>
+        <div class="listing__items">
+                <div class="listing__item listing__item--featured">
+                    
+
+
+    <a href="/departamento-en-alquiler-en-tandil--8534105"
+       id="id-card-1"
+       class="card card--featured"
+       target="_blank"
+       data-item-card>
+        
+
+
+    <div class="card__photos-box">
+        <div class="card__carousel simple-carousel">
+            <span data-prev>
+                <i class="basico1-icon-angle_left_bold"></i>
+            </span>
+
+            <span data-next>
+                <i class="basico1-icon-angle_right_bold"></i>
+            </span>
+
+            <ul class="card__photos" data-carousel>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/5014358/605ff9cd-f067-45a7-984e-6bdbfa7c6b83_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler - $ 22.000"
+                                 data-src="https://static1.sosiva451.com/5014358/348e177d-b6b9-42c0-8a53-dc716cd3b00f_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler"
+                                 data-src="https://static1.sosiva451.com/5014358/a224e8ee-6e43-4618-82a9-80e5931426a6_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Juan J Labarden 400"
+                                 data-src="https://static1.sosiva451.com/5014358/a14501b3-c39e-45bc-a886-f4d1fa433a10_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento - 2 dormitorios | 2 ba&#241;os"
+                                 data-src="https://static1.sosiva451.com/5014358/b98f3875-7e1d-4973-a5c0-73704abe8645_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/5014358/91dce181-c89c-4bca-b51e-d612bd6691a3_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler"
+                                 data-src="https://static1.sosiva451.com/5014358/b14a2c6d-328e-4f4a-b2d2-34d7f07ab0b1_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Juan J Labarden 400"
+                                 data-src="https://static1.sosiva451.com/5014358/e4a963fa-d42d-4def-b2c5-596b7f96c4bd_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Tandil"
+                                 data-src="https://static1.sosiva451.com/5014358/8aaa1e06-7cba-455b-bbbd-0fe985559743_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/5014358/e58831be-4bce-4a15-8950-b9f19307de18_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/5014358/ffaf053d-46a5-4b26-86f9-e153e386ee86_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Duplex en ALQUILER, 2 dormitorios - Foto 12"
+                                 data-src="https://static1.sosiva451.com/5014358/e1b4f768-91af-43f3-aaf6-207fcfccd8b2_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento"
+                                 data-src="https://static1.sosiva451.com/5014358/569ec4ca-fe53-4cb1-b00d-abf3a33a9be9_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Duplex en ALQUILER, 2 dormitorios - Foto 14"
+                                 data-src="https://static1.sosiva451.com/5014358/ecc19bc7-c618-43a1-adaa-6f6fa75c294c_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Duplex en ALQUILER, 2 dormitorios - Foto 15"
+                                 data-src="https://static1.sosiva451.com/5014358/a5cb19c7-b03f-4d7e-adcd-eac4d597dd86_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Duplex en ALQUILER, 2 dormitorios - Foto 16"
+                                 data-src="https://static1.sosiva451.com/5014358/d0fd0f11-8176-437e-ab77-6a4d73182248_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Duplex en ALQUILER, 2 dormitorios - Foto 17"
+                                 data-src="https://static1.sosiva451.com/5014358/0c232800-7652-48fd-848a-382d79bb36a2_u_small.jpg"
+                                 data-lazy />
+                        </li>
+
+            </ul>
+        </div>
+
+        <div class="card__monetary-values">
+            <p class="card__price">
+                        <span class="card__currency">$</span> 22.000            </p>
+
+        </div>
+
+            <span class="card__favourite"
+                  data-svg="/Content/images/icon-favorite.svg"
+                  data-favourite="8534105"
+                  data-favourite-visibilidad="12046806">
+            </span>
+            <span class="card__visited"
+                  data-visited="8534105">
+                Visto
+            </span>
+
+        <p class="card__points">
+            1
+        </p>
+    </div>
+
+<div class="card__details-box">
+    <div class="card__location-address-box">
+            <h2 class="card__address">
+                Juan J Labarden 400
+            </h2>
+    </div>
+
+    <h3 class="card__title" title="Duplex en ALQUILER, 2 dormitorios">
+        Duplex en ALQUILER, 2 dormitorios
+    </h3>
+
+        <p class="card__common-data">
+            <span>2 dormitorios</span><span>2 baños</span>
+        </p>
+
+    <p class="card__info ">
+        *Labard&#233;n al 400*
+
+se alquila hermoso duplex en complejo. 2 dorm. En planta alta y ba&#241;o completo. Planta baja, living-comedor, cocina,toilette. Peque&#241;o patio y cochera cubierta. Port&#243;n automatizado.
+No se admiten mascotas!!
+$22.000 mas exp. Mas municipales.
+Por consultas al wapp. ********
+O al fijo 4431787 
+    </p>
+
+        <div class="card__agent-contact-box">
+            <div class="card__agent">
+                    <img src="https://static1.sosiva451.com/71893_a/bd097f8f-12a4-41e6-9301-491a70d56170_small.jpg" onerror="this.parentNode.parentNode.removeChild(this.parentNode);" class="img-responsive" alt="Agent logo" />
+            </div>
+
+            <span class="btn btn-secondary"
+                  data-aviso-id="8534105"
+                  data-anunciante-id="39817"
+                  data-moneda="$"
+                  data-precio="22000"
+                  data-contact
+                  data-gtm-listingcontact-begin>
+                Contactar
+            </span>
+        </div>
+</div>
+
+    </a>
+
+
+                </div>
+                <div class="listing__item listing__item--featured">
+                    
+
+
+    <a href="/departamento-en-alquiler-en-tandil-2-ambientes--7338270"
+       id="id-card-2"
+       class="card card--featured"
+       target="_blank"
+       data-item-card>
+        
+
+
+    <div class="card__photos-box">
+        <div class="card__carousel simple-carousel">
+            <span data-prev>
+                <i class="basico1-icon-angle_left_bold"></i>
+            </span>
+
+            <span data-next>
+                <i class="basico1-icon-angle_right_bold"></i>
+            </span>
+
+            <ul class="card__photos" data-carousel>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/0728337/8ad7ac5b-1f6e-4e74-9e68-40120d8e686c_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler - $ 19.000"
+                                 data-src="https://static1.sosiva451.com/0728337/60e245f6-0ca1-4a82-ab4f-4564be087f44_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler"
+                                 data-src="https://static1.sosiva451.com/0728337/540c8123-1ef9-47b0-aac8-40557fa31f8b_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="14 De Julio 400"
+                                 data-src="https://static1.sosiva451.com/0728337/b44d97a4-f9dd-4327-bb6b-ebb8fda984a6_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento - 50 m&#178; | 1 dormitorio | 1 ba&#241;o"
+                                 data-src="https://static1.sosiva451.com/0728337/50dcd9a9-47cf-4d8f-b378-c71d5f694ae0_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/0728337/ee7f29fc-27c8-4f30-a0e7-bf70070ee1e9_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler"
+                                 data-src="https://static1.sosiva451.com/0728337/9b3a9dab-b6da-492e-9b40-34c223304fa3_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="14 De Julio 400"
+                                 data-src="https://static1.sosiva451.com/0728337/62de3887-57ed-4c7b-bbe9-e708285975c1_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Tandil"
+                                 data-src="https://static1.sosiva451.com/0728337/1cb97a6e-3a35-45f0-8ae3-ae9dbd628615_u_small.jpg"
+                                 data-lazy />
+                        </li>
+
+            </ul>
+        </div>
+
+        <div class="card__monetary-values">
+            <p class="card__price">
+                        <span class="card__currency">$</span> 19.000            </p>
+
+                <p class="card__expenses" title="$1.800 expensas">
+                    &plus; $1.800 expensas
+                </p>
+        </div>
+
+            <span class="card__favourite"
+                  data-svg="/Content/images/icon-favorite.svg"
+                  data-favourite="7338270"
+                  data-favourite-visibilidad="11030450">
+            </span>
+            <span class="card__visited"
+                  data-visited="7338270">
+                Visto
+            </span>
+
+        <p class="card__points">
+            0
+        </p>
+    </div>
+
+<div class="card__details-box">
+    <div class="card__location-address-box">
+            <h2 class="card__address">
+                14 De Julio 400
+            </h2>
+    </div>
+
+    <h3 class="card__title" title="EN ALQUILER DEPARTAMENTO 1 DORMITORIO TANDIL | CENTRICO">
+        EN ALQUILER DEPARTAMENTO 1 DORMITORIO TANDIL | CENTRICO
+    </h3>
+
+        <p class="card__common-data">
+            <span>50 m²</span><span>1 dormitorio</span><span>1 baño</span>
+        </p>
+
+    <p class="card__info ">
+        Se alquila departamento de 1 dormitorio, ubicado en calle 14 de julio al 400, en la ciudad de tandil.-
+El mismo se encuentra en 4to piso por ascensor, cuenta con amplio living-comedor, cocina, ba&#241;o, balc&#243;n y cochera.-
+
+Valor primer a&#241;o: $19.000,00 + expensas + agua
+
+condiciones para alquilar:
+* 1 mes de adelanto ($19.000,00.-)
+* 1 mes de deposito ($19.000,00.-)
+* Honorarios del 4% sobre el valor
+    </p>
+
+        <div class="card__agent-contact-box">
+            <div class="card__agent">
+                    <img src="https://static1.sosiva451.com/960941_a/523b7da6-d500-45b7-934d-22fc9d2e2b67_small.jpg" onerror="this.parentNode.parentNode.removeChild(this.parentNode);" class="img-responsive" alt="Agent logo" />
+            </div>
+
+            <span class="btn btn-secondary"
+                  data-aviso-id="7338270"
+                  data-anunciante-id="149069"
+                  data-moneda="$"
+                  data-precio="19000"
+                  data-contact
+                  data-gtm-listingcontact-begin>
+                Contactar
+            </span>
+        </div>
+</div>
+
+    </a>
+
+
+                </div>
+                <div class="listing__item listing__item--featured">
+                    
+
+
+    <a href="/departamento-en-alquiler-en-tandil-3-ambientes--8538044"
+       id="id-card-3"
+       class="card card--featured"
+       target="_blank"
+       data-item-card>
+        
+
+
+    <div class="card__photos-box">
+        <div class="card__carousel simple-carousel">
+            <span data-prev>
+                <i class="basico1-icon-angle_left_bold"></i>
+            </span>
+
+            <span data-next>
+                <i class="basico1-icon-angle_right_bold"></i>
+            </span>
+
+            <ul class="card__photos" data-carousel>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/4408358/eb5f972e-fd04-45fb-bf6a-cfa28e177600_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler - $ 22.500"
+                                 data-src="https://static1.sosiva451.com/4408358/ebc6ea93-0330-4397-ba51-b408cd3b78eb_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler"
+                                 data-src="https://static1.sosiva451.com/4408358/10c59b24-518e-4760-b7bf-305ab815c7e1_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Alberdi 400, Piso 1"
+                                 data-src="https://static1.sosiva451.com/4408358/64865497-2270-41db-adcd-16e56d89b39a_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento - 69 m&#178; | 2 dormitorios | 5 a&#241;os"
+                                 data-src="https://static1.sosiva451.com/4408358/4a6e9679-5ae7-4b7d-b8d5-74a28381adf4_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/4408358/5bacf4db-99b1-49a9-acd8-0e224d0184b2_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler"
+                                 data-src="https://static1.sosiva451.com/4408358/e8c654d0-5bff-4a12-b6cf-553c4372b605_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Alberdi 400, Piso 1"
+                                 data-src="https://static1.sosiva451.com/4408358/a75fe94d-9889-4901-9238-ff95afca7176_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Tandil"
+                                 data-src="https://static1.sosiva451.com/4408358/091d2509-aa44-40e9-827b-c07ac9bb5c59_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/4408358/f9abbc5b-01e4-4cc0-9005-1aab3668ccca_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento en Alquiler en Tandil"
+                                 data-src="https://static1.sosiva451.com/4408358/808d6ce7-848d-4763-9d10-57e617ceaf15_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 12"
+                                 data-src="https://static1.sosiva451.com/4408358/c4d2bb9e-88e3-4146-bc1c-226de375003a_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="Departamento de 5 a&#241;os"
+                                 data-src="https://static1.sosiva451.com/4408358/7fc7f8a0-785a-4e24-aad0-9f3bbb2e5639_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 14"
+                                 data-src="https://static1.sosiva451.com/4408358/87a9f439-c70f-4190-8f14-b83d68551904_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 15"
+                                 data-src="https://static1.sosiva451.com/4408358/97306218-fed1-4d1c-92d4-d5d8924442e6_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 16"
+                                 data-src="https://static1.sosiva451.com/4408358/543afbb5-5cbe-40fb-a7f4-5ccd24438a2f_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 17"
+                                 data-src="https://static1.sosiva451.com/4408358/2777e7b6-fff0-4ba9-83e8-4d196f903324_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 18"
+                                 data-src="https://static1.sosiva451.com/4408358/e595d925-d9a6-4c66-8b44-2b33cc918b6f_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 19"
+                                 data-src="https://static1.sosiva451.com/4408358/c24740a7-40b6-4dbb-b061-396b9866555e_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 20"
+                                 data-src="https://static1.sosiva451.com/4408358/8ed0f146-f676-4a74-afb7-7f83ef5ebc0b_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 21"
+                                 data-src="https://static1.sosiva451.com/4408358/38a17419-338b-4aad-a032-aafe3c38ccf3_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 22"
+                                 data-src="https://static1.sosiva451.com/4408358/6eafa2cd-ea29-4c9c-adac-7cd893b0f8af_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 23"
+                                 data-src="https://static1.sosiva451.com/4408358/0ba876ab-75c4-48ad-b622-dbc92cbb718a_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 24"
+                                 data-src="https://static1.sosiva451.com/4408358/24b7f0a7-40f9-4236-87bf-d42af4e21807_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 25"
+                                 data-src="https://static1.sosiva451.com/4408358/74e0f4cf-96c4-48a1-a100-46fe834e0666_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 26"
+                                 data-src="https://static1.sosiva451.com/4408358/f7ff4b6c-0f8f-4ebd-8cc4-0acd22191e66_u_small.jpg"
+                                 data-lazy />
+                        </li>
+                        <li>
+                            <img alt="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL - Foto 27"
+                                 data-src="https://static1.sosiva451.com/4408358/48466547-94e0-4109-b95d-dc63c7a482b4_u_small.jpg"
+                                 data-lazy />
+                        </li>
+
+            </ul>
+        </div>
+
+        <div class="card__monetary-values">
+            <p class="card__price">
+                        <span class="card__currency">$</span> 22.500            </p>
+
+                <p class="card__expenses" title="$1.600 expensas">
+                    &plus; $1.600 expensas
+                </p>
+        </div>
+
+            <span class="card__favourite"
+                  data-svg="/Content/images/icon-favorite.svg"
+                  data-favourite="8538044"
+                  data-favourite-visibilidad="12050779">
+            </span>
+            <span class="card__visited"
+                  data-visited="8538044">
+                Visto
+            </span>
+
+        <p class="card__points">
+            0
+        </p>
+    </div>
+
+<div class="card__details-box">
+    <div class="card__location-address-box">
+            <h2 class="card__address">
+                Alberdi 400, Piso 1
+            </h2>
+    </div>
+
+    <h3 class="card__title" title="SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL">
+        SE ALQUILA DEPARTAMENTO DOS DORMITORIOS | TANDIL
+    </h3>
+
+        <p class="card__common-data">
+            <span>69 m²</span><span>2 dormitorios</span><span>5 años</span>
+        </p>
+
+    <p class="card__info ">
+        Excelente departamento en alquiler
+ubicaci&#243;n inmejorable:  calle alberdi entre pinto y belgrano
+
+cuenta con:
+. Dos dormitorios con dos amplios placares
+. Cocina separada
+. Living comedor
+. Balc&#243;n
+. Espacio de estacionamiento
+
+condiciones de alquiler:
+- honorarios ($32.400,00.-)
+- Mes de adelanto ($22500,00.-)
+- Dep&#243;sito ($22500.-)
+- Garantia propietaria o dos garantes con recibo de sueldo
+
+valor:
+    </p>
+
+        <div class="card__agent-contact-box">
+            <div class="card__agent">
+                    <img src="https://static1.sosiva451.com/960941_a/523b7da6-d500-45b7-934d-22fc9d2e2b67_small.jpg" onerror="this.parentNode.parentNode.removeChild(this.parentNode);" class="img-responsive" alt="Agent logo" />
+            </div>
+
+            <span class="btn btn-secondary"
+                  data-aviso-id="8538044"
+                  data-anunciante-id="149069"
+                  data-moneda="$"
+                  data-precio="22500"
+                  data-contact
+                  data-gtm-listingcontact-begin>
+                Contactar
+            </span>
+        </div>
+</div>
+
+    </a>
+
+
+                </div>
+        </div>
+        <div class="breadcrumb-container-centered">
+                <ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+            <li class="breadcrumb-item " property="itemListElement" typeof="ListItem">
+                <meta property="position" content="1" />
+
+                    <a href="/" property="item" typeof="WebPage">
+                        <span property="name">
+                            Argenprop
+                        </span>
+                    </a>
+            </li>
+            <li class="breadcrumb-item " property="itemListElement" typeof="ListItem">
+                <meta property="position" content="2" />
+
+                    <a href="/departamento" property="item" typeof="WebPage">
+                        <span property="name">
+                            Departamento
+                        </span>
+                    </a>
+            </li>
+            <li class="breadcrumb-item " property="itemListElement" typeof="ListItem">
+                <meta property="position" content="3" />
+
+                    <a href="/departamento-alquiler" property="item" typeof="WebPage">
+                        <span property="name">
+                            Alquiler
+                        </span>
+                    </a>
+            </li>
+            <li class="breadcrumb-item active" property="itemListElement" typeof="ListItem">
+                <meta property="position" content="4" />
+
+                    <span property="item" typeof="WebPage">
+                        <span property="name">
+                            Tandil
+                        </span>
+                    </span>
+            </li>
+    </ol>
+
+        </div>
+
+
+
+
+    <div class="dfp-listing-bottom" id="listingpaginador">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('listingpaginador'); });
+                </script></div>
+    <div class="dfp-listing-bottom-mobile" id="listingpaginadormobile">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('listingpaginadormobile'); });
+                </script></div>
+</div>
+        </div>
+    </div>
+
+
+
+<div id="saveAlertPopup" class="popup popup-save-alert">
+    <div class="popup-header">
+        <p class="popup-title">Crear alerta</p>
+        <button class="popup-close" data-popup-close>
+            <i class="basico1-icon-close"></i>
+        </button>
+    </div>
+
+        <div class="popup-search-description">
+            <p>Para crear una alerta seleccion&#225;:</p>
+
+            <ul>
+                    <li>
+                        - Localidad o barrio
+                    </li>
+            </ul>
+        </div>
+        <button class="btn btn-primary btn-block" data-popup-close>
+            Cerrar
+        </button>
+</div>
+
+<div id="suggestAlertPopup" class="popup popup-suggest-alert">
+    <div class="popup-header">
+        <button class="popup-close" data-popup-close>
+            <i class="basico1-icon-close"></i>
+        </button>
+    </div>
+
+    <img src="/Content/images/listing-bell-v2.svg" alt="&#191;Quer&#233;s crear una alerta para esta b&#250;squeda?" />
+    
+    <p class="alert-title">
+        &#191;Quer&#233;s crear una alerta para esta b&#250;squeda?
+    </p>
+    <p class="alert-description">
+        Cre&#225; una alerta y recib&#237; propiedades nuevas antes que nadie
+    </p>
+
+    <button type="submit" class="btn btn-primary btn-block"
+            data-alert-can-save="false"
+            data-authenticated="false">
+        Crear alerta
+    </button>
+    
+    <button type="button" class="btn btn-block btn-secondary" data-popup-close>
+        Cancelar
+    </button>
+</div>
+
+
+
+        </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__site-info">
+                <img class="footer__site-logo" src="/Content/images/argenprop/argenprop-logo.svg" alt="Argenprop" />
+
+                <p class="footer__site-description">
+                    Encontr&#225; propiedades e inmuebles en venta y alquiler, casas, departamentos, terrenos, locales, oficinas, quintas, PH, cocheras y m&#225;s en Argenprop.
+                </p>
+
+                <ul>
+                    <li>
+                        <a href="/TerminosCondiciones">T&#233;rminos y Condiciones</a>
+                    </li>
+                    <li>
+                        <a href="/Privacidad">Normas de Confidencialidad y Privacidad</a>
+                    </li>
+                </ul>
+                    
+                    <div class="footer__data-fiscal">
+                        <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/response.aspx?qr=-SEvGIJq2b1CWny94Qactw,," rel="nofollow noopener" target="_blank">
+                            <img src="/Content/images/data-fiscal.png" alt="Clar&#237;n Digital" />
+                        </a>
+
+                        <ul>
+                            <li>
+                                Clar&#237;n Digital
+                            </li>
+                            <li>
+                                Todos los derechos reservados.
+                            </li>
+                            <li>
+                                &copy; 2021 Argenprop
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="footer__site-map">
+                <p class="footer__title">
+                    Mapa de sitio
+                </p>
+
+                <ol>
+                    
+
+
+		<li>         
+			<a href="/" id="buscar-propiedades"><i class="basico1-icon-home"></i>
+Buscar propiedades</a>			
+		</li>
+		<li>         
+			<a data-search-emprendimiento-header="" href="https://emprendimientos.argenprop.com/emprendimiento" id="entrepreneurship"><i class="basico1-icon-building"></i>
+Emprendimientos</a>			
+		</li>
+		<li>         
+			<a data-search-countries-header="" href="https://countries.argenprop.com/" id="countries"><i class="basico1-icon-country"></i>
+Countries<strong class="badge">nuevo</strong></a>			
+		</li>
+		<li>         
+			<a href="/Garantias-Alquiler" id="garantias"><i class="basico1-icon-calculator"></i>
+Garantías de Alquiler</a>			
+		</li>
+		<li>         
+			<a href="/Publicar" id="publicar"><i class="basico1-icon-sell"></i>
+Publicar</a>			
+		</li>
+		<li>         
+			<a href="/Noticias" id="noticias"><i class="basico1-icon-news"></i>
+Noticias</a>			
+		</li>
+
+
+                        <li>
+                            <a href="/MiCuenta">Mi cuenta</a>
+                        </li>
+
+                    <li>
+                        <a href="/Contactenos">Contactenos</a>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="footer__site-contact">
+                <p class="footer__title">
+                    
+Contacto
+
+                </p>
+
+                <ul>
+                    <!--<li>
+        Argenprop
+    </li>-->
+
+                        <!--<li>
+            0810-999-2527
+        </li>-->
+
+                        <li>
+                            Escribinos a info@argenprop.com,
+                        </li>
+                        <li>
+                            debido a la situación actual
+                        </li>
+                        <li class="footer__business-hours">
+                            <p>estamos respondiendo todas las consultas vía email.</p>
+
+                        </li>
+                        <li>
+                            <p>
+                                <br>
+
+                            </p>
+                        </li>
+
+
+
+                    <li>
+                        <!--<p>Lunes a viernes de 9 a 18hs</p>-->
+                        <a href="https://www.clarin.com/" rel="noopener" target="_blank">clarín.com</a>
+                    </li>
+                </ul>
+
+                
+    <ul class="social-icons">
+            <li>
+                <a href="https://www.facebook.com/argenprop" target="_blank" rel="noopener">
+                    <i class="basico1-icon-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/argenprop" target="_blank" rel="noopener">
+                    <i class="basico1-icon-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/argenprop" target="_blank" rel="noopener">
+                    <i class="basico1-icon-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/user/Argenprop" target="_blank" rel="noopener">
+                    <i class="basico1-icon-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://ar.pinterest.com/argenprop/" target="_blank" rel="noopener">
+                    <i class="basico1-icon-pinterest"></i>
+                </a>
+            </li>
+    </ul>
+
+
+                <p class="footer__powered">
+                    Powered by
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="menu-mobile-primary"
+         data-menu-mobile="/Auth/GetMenuMobile">
+        <svg class="spinner" viewBox="0 0 50 50" data-loader>
+    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+</svg>
+
+    </div>
+
+    <div id="backtotop" class="backtotop">
+        <button></button>
+    </div>
+
+    <input type="hidden" data-criteo
+           data-criteo-account="52283" />
+
+    <input type="hidden" data-user
+           data-user-name=""
+           data-user-phone="" />
+
+    <input type="hidden" id="ga-dimension"
+           data-sistema="Argenprop"
+           data-id-sistema="3"
+           data-id-usuario="anonimo" />
+
+
+    
+
+
+<div class="popup popup-alert" data-reset-form="true" data-show-loading-submit="" id="genericAlertPopup"><div class="popup-header"><p class="popup-title" data-popup-title=""></p><button class="popup-close" data-popup-close="">
+<i class='basico1-icon-close'></i>
+</button></div><div class="popup-content">    <p data-popup-message></p>
+    <div class="popup-footer">
+        <button type="submit" class="btn btn-primary btn-block" data-popup-close>
+            Cerrar
+        </button>
+    </div>
+</div>
+</div>
+
+<div class="popup popup-confirm" data-reset-form="true" data-show-loading-submit="" id="genericConfirmPopup"><div class="popup-header"><p class="popup-title" data-popup-title=""></p><button class="popup-close" data-popup-close="">
+<i class='basico1-icon-close'></i>
+</button></div><div class="popup-content">    <div class="popup-content">
+        <p data-popup-message></p>
+    </div>
+    <div class="popup-footer">
+        <button type="submit" class="btn btn-danger btn-block" data-popup-button-confirm></button>
+    </div>
+</div>
+</div>
+<div class="popup popup-confirm" data-reset-form="true" data-show-loading-submit="" id="genericCancelConfirmPopup"><div class="popup-header"><p class="popup-title" data-popup-title=""></p><button class="popup-close" data-popup-close="">
+<i class='basico1-icon-close'></i>
+</button></div><div class="popup-content">    <div class="popup-content">
+        <p data-popup-message></p>
+    </div>
+    <div class="popup-footer">
+        <button type="submit" class="btn btn-primary btn-block" data-popup-button-confirm></button>
+        <button type="button" class="btn btn-block" data-popup-close>Cancelar</button>
+    </div>
+</div>
+</div>
+
+
+
+
+    <div class="overlay"></div>
+    <div class="recaptcha-container"><div class="g-recaptcha" data-badge="bottomright" data-recaptcha-service="" data-sitekey="6LdAGYMUAAAAAEsylGm4etd6Bmk38qNB5TasOWCU" data-size="invisible" data-submit="true" id="0cfsap3vvlo"></div></div>
+
+    
+
+    <script>
+        function socialLogin(returnUrl) {
+            if (!returnUrl) return;
+
+            const customEvent = new CustomEvent("succesLoginSocial");
+            document.dispatchEvent(customEvent);
+        }
+
+        function RecaptchaReady() {
+            const customEvent = new CustomEvent("recaptchaServiceReady");
+            document.dispatchEvent(customEvent);
+        }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.closest%2CNodeList.prototype.forEach%2CIntersectionObserver%2CURLSearchParams%2Ces2016"></script>
+
+                <script src="/typescripts/dist/listing-sidebar.e3e96bbb0c2bca9a4948.js" defer></script>
+                <script src="/typescripts/dist/listing.24696e560d854bb45812.js" defer></script>
+                <script src="/typescripts/dist/utm-storage.1cf09ea249625ba21564.js" defer></script>
+                <script src="/typescripts/dist/menu-responsive.27f0d381d9eb49e4a3c9.js" defer></script>
+                <script src="/typescripts/dist/activity-log.22ed1543d0c740f1f913.js" defer></script>
+                <script src="/typescripts/dist/smart-banner.74a34257daffbba03e49.js" defer></script>
+                <script src="/typescripts/dist/header-login.b298dababb4b2ef06de9.js" defer></script>
+
+
+
+    
+
+    <div style="display:none" data-loader>
+        <svg class="spinner" viewBox="0 0 50 50" data-loader>
+    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+</svg>
+
+    </div>
+</body>
+</html>
